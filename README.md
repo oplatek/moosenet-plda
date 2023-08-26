@@ -10,5 +10,21 @@
 <p>&nbsp;</p>
 
 # Moosenet PLDA
-Moosenet is a trainable metric for synthesized speech. 
-We experimented with SSL NN models and plda backend.
+MooseNet is a trainable metric for synthesized speech. 
+We experimented with SSL NN models and PLDA module.
+See the [MooseNet-PLDA paper](https://arxiv.org/abs/2301.07087).
+
+
+## Installation
+```
+# Optional for reinstallation
+conda deactivate; rm -rf env; 
+# Installing new conda environment and editable pip moosenet package
+conda env create --prefix ./env -f environment.yml \
+  && conda activate ./env \
+  && pip install -e .[dev] 
+```
+
+## Reproducing the Experiments
+- The commands for fine-tuning a SSL models (XLS-R and Wav2Vec 2.0) to MooseNet NN on the English data from the main track can be found in `./main.sh`
+- For the commands for fine-tuning MooseNet NN on main and the Chinese set from OOD track see `./ood.sh`
