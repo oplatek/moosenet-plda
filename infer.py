@@ -1,0 +1,1 @@
+moosenet/bin/infer.py

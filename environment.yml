@@ -1,0 +1,15 @@
+name: moosenet
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - cudatoolkit=11.3
+  - pytorch=1.10.1
+  - torchaudio=0.10.1
+  - scipy
+  - pip
+    # Pip dependencies are installed through setup.py please run also:
+    # pip install -e .[dev]   # from this directory
+    # cd FAIRSEQ_DIR # pip install -e . # for SSL model
