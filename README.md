@@ -28,3 +28,8 @@ conda env create --prefix ./env -f environment.yml \
 ## Reproducing the Experiments
 - The commands for fine-tuning a SSL models (XLS-R and Wav2Vec 2.0) to MooseNet NN on the English data from the main track can be found in `./main.sh`
 - For the commands for fine-tuning MooseNet NN on main and the Chinese set from OOD track see `./ood.sh`
+
+
+## Acknowledgements
+This work was co-funded by Charles University projects GAUK 40222, SVV 260575 and the European Union (ERC, NG-NLG, 101039303).
+<img src="https://ufal.mff.cuni.cz/~odusek/2024/images/LOGO_ERC-FLAG_FP.png" alt="erc-logo" height="150"/>
